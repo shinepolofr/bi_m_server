@@ -1,0 +1,12 @@
+[package]
+name = "database"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+config = { version = "0.1.0", path = "../config" }
+sea-orm = { version = "0.11.2", features = ["macros", "sqlx-postgres", "runtime-tokio-rustls", "debug-print"] }
+serde = { version = "1.0.160", features = ["derive"] }
+tokio = { version = "1.27.0", features = ["parking_lot", "macros", "rt"] }

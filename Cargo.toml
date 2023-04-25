@@ -1,0 +1,9 @@
+[workspace]
+members=[
+    "config",
+    "database",
+    "server"
+]
+
+
+    
